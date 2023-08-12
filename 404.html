@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Страница не найдена » Casa Cascata</title>
     <script>
-      var redirectUrl = window.location.href.replace(/\/$/, '');
-      window.location.replace(redirectUrl);
+      sessionStorage.redirect = location.href;
     </script>
+    <meta http-equiv="refresh" content="0;URL='/casa-cascata'">
   </head>
   <body>
     Page not found. You will be redirected to the homepage shortly.
